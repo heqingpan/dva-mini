@@ -103,6 +103,11 @@ import {buildDva} from 'dva-mini'
 import CountModel from './model/count'
 import UserModel from './model/user'
 
+let {rootReducer,rootSaga} = buildDva([
+    CountModel,
+    UserModel
+],effects)
+
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 
