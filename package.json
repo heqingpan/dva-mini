@@ -1,0 +1,23 @@
+{
+  "name": "dva-mini",
+  "version": "1.0.0",
+  "description": "a purely dva model package,independent other package",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "heqingpan@126.com",
+  "homepage": "https://github.com/heqingpan/dva-mini",
+  "repository": "https://github.com/heqingpan/dva-mini.git",
+  "keywords":[
+    "dva",
+    "dvajs",
+    "mini dva",
+    "mini redux",
+    "redux saga"
+  ],
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
