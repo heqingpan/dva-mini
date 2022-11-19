@@ -1,6 +1,12 @@
 # dva-mini
 a purely dva model package,independent other package.
 
+dva-mini是一个支持按dva结构组织redux state,reducers,action,effect的极简库。
+
+dvajs依赖太重，因依赖的库版本较老，目前按其文档创建应用都运行不起来。
+
+轻量级的dva-mini支持dva模型，它没有依赖任何的库，不会因版本问题跑不起来。
+
 
 # instructions
 

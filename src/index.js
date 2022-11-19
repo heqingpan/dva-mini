@@ -44,8 +44,10 @@ export const buildDva = function(models,{call,apply,put,fork,select,takeEvery,al
 
         //effects
         var modelEffects = model.effects || {};
-        for(var k in modelEffects){
-            sagas.push(fork(watchType(namespace,namespace+"/"+k,modelEffects[k])));
+        if(put!==undefined && fork!==undefined && takeEvery!==undefined && all!==undefined){
+            for(var k in modelEffects){
+                sagas.push(fork(watchType(namespace,namespace+"/"+k,modelEffects[k])));
+            }
         }
 
         //reducers
@@ -84,4 +86,8 @@ export const buildDva = function(models,{call,apply,put,fork,select,takeEvery,al
         }
     }
     return {rootReducer,rootSaga};
+}
+
+export default {
+    buildDva
 }
